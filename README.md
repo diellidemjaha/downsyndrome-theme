@@ -1,4 +1,4 @@
-# Down syndrome theme
+# Down syndrome WordPress custom-theme
 
 web development repo for Wordpress Theme customization for Down Syndrome Kosova
 
