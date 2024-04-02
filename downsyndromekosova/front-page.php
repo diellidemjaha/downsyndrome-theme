@@ -67,7 +67,6 @@
 <div class="site-main">
     <div class="home_slider" dir>
         <?php
-        // Query to retrieve images from the custom post type "image_gallery"
         $args = array(
             'post_type' => 'slider_gallery',
             'posts_per_page' => -1,
@@ -88,10 +87,9 @@
 
     <div class="main-card">
         <?php
-        // Query to retrieve text content from the custom post type "text_content"
         $args = array(
             'post_type' => 'text_content',
-            'posts_per_page' => 1, // Assuming you have one main text content
+            'posts_per_page' => 1, 
         );
 
         $text_posts = new WP_Query($args);
@@ -101,7 +99,7 @@
                 $text_posts->the_post();
         ?>
                 <div class="card-body">
-                    <?php the_content(); // Display text content 
+                    <?php the_content();  
                     ?>
                 </div>
         <?php
@@ -129,7 +127,6 @@
                     <div class="card">
                         <?php
                         if (has_post_thumbnail()) {
-                            // Display the post thumbnail (featured image)
                             the_post_thumbnail('large', ['class' => 'card-img-top']);
                         }
                         ?>
@@ -159,7 +156,6 @@
 
 
     <!-- New container for social media links and contact information -->
-    <!-- <div class="container-fluid bg-light py-5 mb-3"> -->
 
     <div class="row py-5 mb-3">
         <div class="col-md-6 col-lg-4 col-12 mb-4  d-flex justify-content-center">
@@ -167,9 +163,9 @@
                 <h1 class="mb-5 text-center">Hulumtimet</h1>
 
                 <?php
-                // Query for 'Hulumtimet' custom post type and limit to one post
+              
                 $hulumtimet_args = array(
-                    'post_type' => 'pdf_document', // Replace with your custom post type name
+                    'post_type' => 'pdf_document', 
                     'posts_per_page' => 1,
                 );
                 $hulumtimet_query = new WP_Query($hulumtimet_args);
@@ -191,7 +187,6 @@
                                 </span>
                                 <div class="text-center">
                                     <?php
-                                    // Output a link to the PDF file using the ACF "pdf_file" field
                                     $pdf_file = get_field('hulumtimi_pdf');
                                     if ($pdf_file) {
                                         echo '<a class="download-button" href="' . esc_url($pdf_file['url']) . '" target="_blank">Shkarko PDF<i class="fa fa-download pe-1" aria-hidden="true"></i></a>';
@@ -212,15 +207,13 @@
                 ?>
             </div>
         </div>
-        <!-- Add your social media links here -->
 
-        <!-- Add more social media links/buttons as needed -->
         <div class="col-md-6 col-lg-4 col-12 mb-4  d-flex justify-content-center">
             <div class="raportet">
             <h1 class="mb-5 text-center">Raportet</h1>
 
             <?php $raportet_args = array(
-                'post_type' => 'pdf_document2', // Replace with your custom post type name
+                'post_type' => 'pdf_document2', 
                 'posts_per_page' => 1,
             );
             $raportet_query = new WP_Query($raportet_args);
@@ -243,7 +236,6 @@
                             </p>
                             <div class="text-center">
                             <?php
-                            // Output a link to the PDF file using the ACF "pdf_file" field
                             $pdf_file = get_field('raporti_pdf');
                             if ($pdf_file) {
                                 echo '<i class="fa fa-download pe-1" aria-hidden="true"></i><a class="download-button" href="' . esc_url($pdf_file['url']) . '" target="_blank">Shkarko PDF</a>';
@@ -270,9 +262,8 @@
             <h1 class="mb-5 text-center">Materialet</h1>
 
             <?php
-            // Query for 'Materialet' custom post type and limit to one post
             $materialet_args = array(
-                'post_type' => 'pdf_document3', // Replace with your custom post type name
+                'post_type' => 'pdf_document3', 
                 'posts_per_page' => 1,
             );
             $materialet_query = new WP_Query($materialet_args);
@@ -294,7 +285,6 @@
                             </p>
                             <div class="text-center">
                             <?php
-                            // Output a link to the PDF file using the ACF "pdf_file" field
                             $pdf_file = get_field('materiali_pdf');
                             if ($pdf_file) {
                                 echo '<i class="fa fa-download pe-1" aria-hidden="true"></i><a class="download-button" href="' . esc_url($pdf_file['url']) . '" target="_blank">Shkarko PDF</a>';
@@ -316,22 +306,17 @@
         </div>
         
         </div>
-        <!-- Add your contact information here -->
 
     </div>
 
     <div class=" py-5 mb-3">
         <div class="row">
             <div class="col-md-6 linqet">
-                <!-- Add your social media links here -->
                 <h3>Na ndiqni ne rrjetet sociale:</h4>
-                    <!-- Add your social media icons/links here -->
                     <a href="#" class="btn btn-primary">Facebook</a>
                     <a href="#" class="btn btn-primary">Twitter</a>
-                    <!-- Add more social media links/buttons as needed -->
             </div>
             <div class="col-md-6 linqet">
-                <!-- Add your contact information here -->
                 <h3>Na kontaktoni:</h4>
                     <p><b>Email:</b> info@downsyndromekosova.org</p>
                     <p><b>Phone:</b> +383 44 11 22 33</p>
