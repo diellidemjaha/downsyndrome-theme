@@ -67,7 +67,6 @@
 <div class="site-main">
     <div class="home_slider" dir>
         <?php
-        // Query to retrieve images from the custom post type "image_gallery"
         $args = array(
             'post_type' => 'slider_gallery',
             'posts_per_page' => -1,
@@ -88,10 +87,9 @@
 
     <div class="main-card">
         <?php
-        // Query to retrieve text content from the custom post type "text_content"
         $args = array(
             'post_type' => 'text_content',
-            'posts_per_page' => 1, // Assuming you have one main text content
+            'posts_per_page' => 1,
         );
 
         $text_posts = new WP_Query($args);
@@ -101,7 +99,7 @@
                 $text_posts->the_post();
         ?>
                 <div class="card-body">
-                    <?php the_content(); // Display text content 
+                    <?php the_content(); 
                     ?>
                 </div>
         <?php
@@ -129,7 +127,6 @@
                     <div class="card">
                         <?php
                         if (has_post_thumbnail()) {
-                            // Display the post thumbnail (featured image)
                             the_post_thumbnail('large', ['class' => 'card-img-top']);
                         }
                         ?>
@@ -154,7 +151,6 @@
     </div>
 </div>
 
-<!-- New container for social media links and contact information -->
 <div class="container-fluid bg-light py-5 mb-3">
     <div class="container">
         <div class="row">
@@ -174,9 +170,7 @@
                     <a href="http://localhost/dsk/hulumtimet/" class="btn btn-default"><b>Shiko më shumë hulumtime</b></a>
                 </div>
             </div>
-            <!-- Add your social media links here -->
 
-            <!-- Add more social media links/buttons as needed -->
             <div class="col-sm-6 col-lg-4 mb-4">
                 <h1 class="mb-5">Raportet:</h1>
                 <div class="card card-2">
@@ -211,7 +205,6 @@
             </div>
         </div>
 
-        <!-- Add your contact information here -->
 
     </div>
 </div>
@@ -220,15 +213,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 linqet">
-                <!-- Add your social media links here -->
                 <h3>Na ndiqni ne rrjetet sociale:</h4>
-                    <!-- Add your social media icons/links here -->
                     <a href="#" class="btn btn-primary">Facebook</a>
                     <a href="#" class="btn btn-primary">Twitter</a>
-                    <!-- Add more social media links/buttons as needed -->
             </div>
             <div class="col-md-6 linqet">
-                <!-- Add your contact information here -->
                 <h3>Na kontaktoni:</h4>
                     <p>Email: info@downsyndromekosova.org</p>
                     <p>Phone: +383 44 11 22 33</p>
