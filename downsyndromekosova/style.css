@@ -1,0 +1,672 @@
+/*
+Theme Name: Down Syndrome Kosova 2023
+Description: Down Syndrome Kosova Wordpress Theme 2023
+Author: Dielli Demjaha - Harrisia
+Version: 1.0
+*/
+
+/* Reset some default styles */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+cite,
+fieldset,
+legend,
+input,
+button,
+textarea,
+form,
+label,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Set some basic styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+h1{
+    color:#222c78;
+}
+.main-card{
+    margin: -90px 200px 100px 200px;
+    z-index: 999;
+    position: sticky;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.main-card p {
+    font-size: 30px;
+    font-weight: bold;
+    /* color:linear-gradient(to right, #dc4114, #222c78); */
+     /* Apply linear gradient as a background */
+     /* background-image: linear-gradient(to right, #dc4114, #222c78); */
+     background-color: black;
+     /* Set text color to transparent */
+     -webkit-background-clip: text;
+     background-clip: text;
+     color: transparent;
+}
+/* .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+} */
+
+.title {
+    margin-bottom: 50px;
+}
+
+.fa-download {
+    color:white;
+}
+/* Header Styles */
+.site-header {
+    background: #dc4114;
+    color: #2e2e2e;
+    padding-bottom: 15px;
+}
+
+.site-logo img{
+    float: left;
+    width: 150px; 
+    height:auto;
+}
+
+.site-logo a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+.site-navigation {
+    float: right;
+}
+
+.site-navigation ul {
+    list-style: none;
+    
+}
+
+.site-navigation li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.site-navigation a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main Content Styles */
+.site-main {
+    background-color: #fff;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+.entry-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.entry-content {
+    font-size: 18px;
+}
+
+/* Footer Styles */
+.site-footer {
+    background: #dc4114!important;
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+.site-footer .container {
+    text-align: center;
+}
+
+.footer-logo {
+    float: center;
+    padding: 15px;
+}
+
+.footer-logo img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px; /* Center the logo and add spacing below */
+}
+
+.footer-logo a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-menu {
+    margin-bottom: 20px; /* Increase spacing for better mobile readability */
+}
+
+.footer-menu a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    display: block; /* Stack menu items on mobile */
+}
+
+.footer-social {
+    margin-top: 20px; /* Increase spacing for better mobile readability */
+}
+
+.footer-social a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+/* Button Styles */
+
+.download-button {
+    text-decoration: none;
+    color:white;
+
+}
+
+.download-button:hover {
+    color:whitesmoke;
+    text-decoration: none;
+}
+
+.donate-button,
+.contact-button {
+    display: grid;
+    padding: 5px 10px;
+    background-color: #dc4114;
+    color: #fff;
+    text-decoration: none;
+    /* border-radius: 50px; */
+    margin-left: 10px;
+    font-weight: bold;
+    float:right;
+}
+
+.donate-button:hover {
+    background-color: #222c78;
+    color:#dc4114;
+    text-decoration: none;
+}
+
+.contact-button:hover {
+    background-color: #222c78;
+    color:#dc4114;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding-left: 0;
+}
+.navbar-nav li {
+    list-style: none;
+    text-decoration: none!important;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.navbar-nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-nav a:hover {
+    text-decoration: none;
+    color: #dc4114
+}
+
+.card-container {
+     margin: 50px;
+    /* padding: 100px; */
+    display: flex; /* Use flexbox to arrange cards horizontally */
+    justify-content: space-between; /* Distribute space between the cards */
+}
+
+.card {
+    /* width:600px; Adjust the card width as needed */
+    height:auto;
+    /* padding: 20px; */
+    /* border: 1px solid #ddd; */
+    /* -webkit-box-shadow: 6px 6px 36px -7px rgba(0,0,0,0.46);
+    -moz-box-shadow: 6px 6px 36px -7px rgba(0,0,0,0.46);
+    box-shadow: 6px 6px 36px -7px rgba(0,0,0,0.46); */
+    /* background: linear-gradient(to right, #dc4114, #222c78); */
+    background: #dc4114 !important;
+    border-radius: 0px!important;
+    /* margin-top: 25px; */
+}
+.card-2 {
+    /* width:600px; Adjust the card width as needed */
+    height:auto;
+    /* padding: 20px; */
+    /* border: 1px solid #ddd; */
+    /* -webkit-box-shadow: 6px 6px 36px -7px rgba(0,0,0,0.46);
+    -moz-box-shadow: 6px 6px 36px -7px rgba(0,0,0,0.46);
+    box-shadow: 6px 6px 36px -7px rgba(0,0,0,0.46); */
+    background: #dc4114!important;
+    /* margin-top: 25px; */
+}
+
+.card-2 img {
+    /* max-width: 100%; */
+    height: auto;
+
+    display: block!important;
+    height: 50%!important;
+    margin: 0!important;
+    object-fit: cover;
+    width: 100%!important;
+}
+.card img {
+    /* max-width: 100%; */
+    /* height: auto;
+
+    display: block!important;
+    height: 50%!important;
+    margin: 0!important;
+    object-fit: cover;
+    width: 100%!important; */
+
+    min-width: 100%;
+    min-height: 300px;
+    max-height: 300px;
+    height: auto;
+    display: block!important;
+    height: 50%!important;
+    margin: 0!important;
+    object-fit: cover;
+    width: 100%!important;
+    
+}
+
+.card h3 {
+    padding: 20px;
+    color: white;
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+.card h3 a{
+    text-decoration: none!important;
+}
+
+.card p {
+    /* padding: 20px; */
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.card-2 h5 {
+    padding: 20px;
+    color: white;
+    font-size:15px;
+    margin-top:10px;
+}
+
+.card-2 p {
+    font-size: 12px;
+    color: white;
+}
+
+.card-button {
+       /* display: inline-block; */
+       color: #dc4114;
+       background-color: white;
+       padding: 9px 10px;
+       /* padding-top: 10px; */
+       /* padding-bottom: 10px; */
+       /* margin-left: 30px; */
+       /* margin-right: 80px; */
+       /* border-radius: 50px; */
+       text-decoration: none;
+       font-weight: bold;
+       transition: background-color 0.3s, color 0.3s;
+       cursor: pointer;
+       align-items: center;
+    
+}
+.card-button-2 {
+    display: inline-block;
+    color: #222c78; /* Text color */
+    background-color: #ffffff; /* Transparent background */
+    padding: 10px 20px 25px 10px;
+    padding-top: 10px;
+    padding-bottom:10px ;
+    margin-left: 30px;
+    margin-right: 80px;
+    border-radius: 50px; /* Rounded corners */
+    text-decoration: none; /* Remove underlines */
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    cursor: pointer; /* Cursor style */ 
+    align-items: center;
+    
+}
+
+.card-button-2:hover {
+    background-color:#222c78; /* Background color on hover */
+    color: white; /* Text color on hover */
+    text-decoration: none;
+}
+.card-button:hover {
+    background-color:#222c78; /* Background color on hover */
+    color: white; /* Text color on hover */
+    text-decoration: none;
+}
+
+/* Slider dots */
+/* Center the dots horizontally and add custom styles */
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  /* Style individual dots */
+  .slick-dots li {
+    margin: 0 5px; /* Adjust the spacing between dots */
+  }
+  
+  /* Inactive dot style */
+  .slick-dots li button {
+    width: 10px; /* Adjust the dot width */
+    height: 10px; /* Adjust the dot height */
+    background-color: #ccc; /* Set the inactive dot color */
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Active dot style */
+  .slick-dots li.slick-active button {
+    background-color: #dc4114; /* Set the active dot color */
+  }
+
+  .slick-dots li button:before {
+    list-style: none;
+  }
+
+  .home_slider {
+    height: 700px; /* Adjust the height as needed */
+}
+
+/* Style the images inside the slider */
+.home_slider img {
+    width: 100%; /* Make images 100% wide */
+    height: 100%; /* Make images 100% tall within the container */
+    object-fit: cover; /* Maintain aspect ratio, cropping if necessary */
+}
+
+/* Style the custom-card section */
+.custom-card {
+    background-color: #eee; /* Background color for the card section */
+    padding: 20px 15px 50px 15px; /* Add padding to create space inside the card */
+    /* border: 1px solid #ccc; Add a border for the card */
+    border-radius: 5px; /* Rounded corners for the card */
+    margin: 25px 25px 100px 25px; /* Add margin to separate it from other sections */
+}
+
+/* Style the card-content within the custom-card */
+.custom-card .card-content {
+    text-align: center; /* Center-align the content within the card */
+}
+
+/* Style the title within the card-content */
+.custom-card .card-content h2 {
+    font-size: 24px; /* Adjust the font size for the title */
+    color: #333; /* Text color for the title */
+    margin-bottom: 10px; /* Add space below the title */
+}
+
+/* Style the description within the card-content */
+.custom-card .card-content p {
+    font-size: 20px; /* Adjust the font size for the description */
+    color: #666; /* Text color for the description */
+    text-align: left;
+}
+.single-image {
+    height: 500px;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    overflow: hidden; /* Hide any overflow if the image is larger */
+}
+
+.single-image img {
+    width: 100%; /* Make the image 100% wide */
+    height: auto;
+    display: block; /* Remove any extra space below inline images */
+    margin: 0 auto; /* Center the image horizontally within its container */
+}
+
+.custom-card .card-content h1{
+    color: #222c78;
+}
+
+/* Hide sub-menu items by default */
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff; /* Customize the background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow */
+}
+
+/* Show sub-menu items on hover */
+.menu-item-has-children:hover .sub-menu {
+    display: block;
+    z-index: 99999;
+}
+
+
+
+/* Style for the right arrow in closed submenus */
+.sub-menu .nav-link::after {
+    content: "\f078"; 
+    float: right;
+    margin-left: 5px;
+    font-family: 'Font Awesome 5 Free'; /* Use FontAwesome for the arrow icon */
+}
+
+.menu-arrow {
+    content: "\f078"; /* Unicode for down arrow (↓) */
+    /* margin-left: 5px; */
+    float: right;
+    font-family: 'Font Awesome 5 Free'; /* Use FontAwesome for the arrow icon */
+}
+
+/* Style for the down arrow in open submenus */
+.sub-menu.show .nav-link::after {
+    content: "\f078"; 
+    float: right;
+    margin-left: 5px;
+    font-family: 'Font Awesome 5'; /* Use FontAwesome for the arrow icon */
+}
+
+/* Style for submenu items */
+
+
+/* .menu-item-has-children:hover .submenu {
+    display: block;
+} */
+
+/* Custom CSS to style the featured image */
+.featured-image {
+    max-width: 100%; /* Adjust the maximum width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any extra space below inline images */
+    margin: 0 auto; /* Center the image horizontally within its container */
+    /* border-radius: 15%; */
+}
+
+.single-paragraph {
+    padding: 25px;
+    font-size: 20px;
+    float: left;
+}
+
+.singlee-image {
+    max-width: 100%!important; /* Set the maximum width for the image */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any extra space below inline images */
+    margin: 10px 30px 20px 20px; /* Center the image horizontally within its container */
+    /* border: 2px solid #ccc; Add a border for styling (optional) */
+    padding: 25px;
+    border-radius: 25px; /* Add rounded corners (optional) */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .site-header {
+        padding-bottom: 10px;
+    }
+
+    .site-logo,
+    .site-navigation {
+        float: none;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .site-navigation ul {
+        text-align: center;
+    }
+
+    .site-navigation li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .footer-menu {
+        text-align: center;
+    }
+
+    .footer-menu a {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .card-container {
+        /* margin: 50px; */
+        display: block!important; 
+    }
+
+    .footer-logo{
+        width: 300px!important;
+    }
+.card{
+    width:350px; 
+    height:auto;
+    margin-bottom: 10px;
+}
+.card-button{
+    margin-left: 0px;
+
+}
+
+.main-card{
+    margin: 0px 15px 10px 20px;
+    z-index: 999;
+    position: sticky;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.main-card p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.site-footer .container {
+    text-align: center;
+}
+
+.footer-menu a,
+.footer-social a {
+    margin: 5px 5px;
+    font-size: 18px;
+}
+.single-image {
+    height: auto;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    overflow: hidden; /* Hide any overflow if the image is larger */
+}
+
+.single-image img {
+    width: 100%; /* Make the image 100% wide */
+    height: auto;
+    display: block; /* Remove any extra space below inline images */
+    margin: 0 auto; /* Center the image horizontally within its container */
+}
+.slick-dots li {
+    list-style: none;
+  }
+  .slick-dots button {
+    background-color: #dc4114; /* Set the active dot color */
+    content: ""!important;
+    color: transparent;
+  }
+
+  .linqet h3 {
+    color: #222c78;
+  }
+  .custom-card .card-content{
+    padding: 5px !important;
+}
+
+.home_slider {
+    height: 300px; /* Adjust the height as needed */
+}
+
+
+}
