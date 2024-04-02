@@ -5,7 +5,6 @@ Author: Dielli Demjaha - Harrisia
 Version: 1.0
 */
 
-/* Reset some default styles */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 
 html,
@@ -49,7 +48,6 @@ summary {
     border: 0;
 }
 
-/* Set some basic styles */
 body {
     font-family: Arial, sans-serif;
     font-size: 16px;
@@ -74,19 +72,12 @@ h1{
     font-size: 30px;
     font-weight: bold;
     /* color:linear-gradient(to right, #dc4114, #222c78); */
-     /* Apply linear gradient as a background */
      /* background-image: linear-gradient(to right, #dc4114, #222c78); */
      background-color: black;
-     /* Set text color to transparent */
      -webkit-background-clip: text;
      background-clip: text;
      color: transparent;
 }
-/* .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-} */
 
 .title {
     margin-bottom: 50px;
@@ -170,7 +161,7 @@ h1{
     width: 150px;
     height: auto;
     display: block;
-    margin: 0 auto 10px; /* Center the logo and add spacing below */
+    margin: 0 auto 10px; 
 }
 
 .footer-logo a {
@@ -180,18 +171,18 @@ h1{
 }
 
 .footer-menu {
-    margin-bottom: 20px; /* Increase spacing for better mobile readability */
+    margin-bottom: 20px; 
 }
 
 .footer-menu a {
     color: #fff;
     text-decoration: none;
     margin: 0 10px;
-    display: block; /* Stack menu items on mobile */
+    display: block; 
 }
 
 .footer-social {
-    margin-top: 20px; /* Increase spacing for better mobile readability */
+    margin-top: 20px; 
 }
 
 .footer-social a {
@@ -264,8 +255,8 @@ h1{
 .card-container {
      margin: 50px;
     /* padding: 100px; */
-    display: flex; /* Use flexbox to arrange cards horizontally */
-    justify-content: space-between; /* Distribute space between the cards */
+    display: flex; 
+    justify-content: space-between; 
 }
 
 .card {
@@ -380,8 +371,8 @@ h1{
     padding-bottom:10px ;
     margin-left: 30px;
     margin-right: 80px;
-    border-radius: 50px; /* Rounded corners */
-    text-decoration: none; /* Remove underlines */
+    border-radius: 50px; 
+    text-decoration: none; 
     font-weight: bold;
     transition: background-color 0.3s, color 0.3s; /* Smooth transition */
     cursor: pointer; /* Cursor style */ 
@@ -390,18 +381,17 @@ h1{
 }
 
 .card-button-2:hover {
-    background-color:#222c78; /* Background color on hover */
-    color: white; /* Text color on hover */
+    background-color:#222c78;
+    color: white;
     text-decoration: none;
 }
 .card-button:hover {
-    background-color:#222c78; /* Background color on hover */
+    background-color:#222c78;
     color: white; /* Text color on hover */
     text-decoration: none;
 }
 
 /* Slider dots */
-/* Center the dots horizontally and add custom styles */
 .slick-dots {
     display: flex;
     justify-content: center;
@@ -413,14 +403,14 @@ h1{
   
   /* Style individual dots */
   .slick-dots li {
-    margin: 0 5px; /* Adjust the spacing between dots */
+    margin: 0 5px; 
   }
   
   /* Inactive dot style */
   .slick-dots li button {
-    width: 10px; /* Adjust the dot width */
-    height: 10px; /* Adjust the dot height */
-    background-color: #ccc; /* Set the inactive dot color */
+    width: 10px;
+    height: 10px; 
+    background-color: #ccc;
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -428,7 +418,7 @@ h1{
   
   /* Active dot style */
   .slick-dots li.slick-active button {
-    background-color: #dc4114; /* Set the active dot color */
+    background-color: #dc4114;
   }
 
   .slick-dots li button:before {
@@ -436,56 +426,53 @@ h1{
   }
 
   .home_slider {
-    height: 700px; /* Adjust the height as needed */
+    height: 700px; 
 }
 
 /* Style the images inside the slider */
 .home_slider img {
-    width: 100%; /* Make images 100% wide */
-    height: 100%; /* Make images 100% tall within the container */
-    object-fit: cover; /* Maintain aspect ratio, cropping if necessary */
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
 }
 
 /* Style the custom-card section */
 .custom-card {
-    background-color: #eee; /* Background color for the card section */
-    padding: 20px 15px 50px 15px; /* Add padding to create space inside the card */
+    background-color: #eee; 
+    padding: 20px 15px 50px 15px; 
     /* border: 1px solid #ccc; Add a border for the card */
-    border-radius: 5px; /* Rounded corners for the card */
-    margin: 25px 25px 100px 25px; /* Add margin to separate it from other sections */
+    border-radius: 5px;
+    margin: 25px 25px 100px 25px; 
 }
 
-/* Style the card-content within the custom-card */
 .custom-card .card-content {
-    text-align: center; /* Center-align the content within the card */
+    text-align: center; 
 }
 
-/* Style the title within the card-content */
 .custom-card .card-content h2 {
-    font-size: 24px; /* Adjust the font size for the title */
-    color: #333; /* Text color for the title */
-    margin-bottom: 10px; /* Add space below the title */
+    font-size: 24px; 
+    color: #333; 
+    margin-bottom: 10px; 
 }
 
-/* Style the description within the card-content */
 .custom-card .card-content p {
-    font-size: 20px; /* Adjust the font size for the description */
-    color: #666; /* Text color for the description */
+    font-size: 20px;
+    color: #666;
     text-align: left;
 }
 .single-image {
     height: 500px;
-    display: flex; /* Use flexbox for centering */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    overflow: hidden; /* Hide any overflow if the image is larger */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    overflow: hidden; 
 }
 
 .single-image img {
-    width: 100%; /* Make the image 100% wide */
+    width: 100%;
     height: auto;
-    display: block; /* Remove any extra space below inline images */
-    margin: 0 auto; /* Center the image horizontally within its container */
+    display: block; 
+    margin: 0 auto;
 }
 
 .custom-card .card-content h1{
@@ -496,11 +483,10 @@ h1{
 .sub-menu {
     display: none;
     position: absolute;
-    background-color: #fff; /* Customize the background color */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow */
+    background-color: #fff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
-/* Show sub-menu items on hover */
 .menu-item-has-children:hover .sub-menu {
     display: block;
     z-index: 99999;
@@ -508,27 +494,25 @@ h1{
 
 
 
-/* Style for the right arrow in closed submenus */
 .sub-menu .nav-link::after {
     content: "\f078"; 
     float: right;
     margin-left: 5px;
-    font-family: 'Font Awesome 5 Free'; /* Use FontAwesome for the arrow icon */
+    font-family: 'Font Awesome 5 Free';
 }
 
 .menu-arrow {
     content: "\f078"; /* Unicode for down arrow (↓) */
     /* margin-left: 5px; */
     float: right;
-    font-family: 'Font Awesome 5 Free'; /* Use FontAwesome for the arrow icon */
+    font-family: 'Font Awesome 5 Free';
 }
 
-/* Style for the down arrow in open submenus */
 .sub-menu.show .nav-link::after {
     content: "\f078"; 
     float: right;
     margin-left: 5px;
-    font-family: 'Font Awesome 5'; /* Use FontAwesome for the arrow icon */
+    font-family: 'Font Awesome 5';
 }
 
 /* Style for submenu items */
@@ -540,10 +524,10 @@ h1{
 
 /* Custom CSS to style the featured image */
 .featured-image {
-    max-width: 100%; /* Adjust the maximum width as needed */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove any extra space below inline images */
-    margin: 0 auto; /* Center the image horizontally within its container */
+    max-width: 100%; 
+    height: auto;
+    display: block; 
+    margin: 0 auto;
     /* border-radius: 15%; */
 }
 
@@ -554,13 +538,13 @@ h1{
 }
 
 .singlee-image {
-    max-width: 100%!important; /* Set the maximum width for the image */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove any extra space below inline images */
-    margin: 10px 30px 20px 20px; /* Center the image horizontally within its container */
+    max-width: 100%!important; 
+    height: auto;
+    display: block; 
+    margin: 10px 30px 20px 20px;
     /* border: 2px solid #ccc; Add a border for styling (optional) */
     padding: 25px;
-    border-radius: 25px; /* Add rounded corners (optional) */
+    border-radius: 25px;
 }
 
 /* Responsive Styles */
@@ -637,22 +621,22 @@ h1{
 }
 .single-image {
     height: auto;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    overflow: hidden; /* Hide any overflow if the image is larger */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
 }
 
 .single-image img {
-    width: 100%; /* Make the image 100% wide */
+    width: 100%; 
     height: auto;
-    display: block; /* Remove any extra space below inline images */
-    margin: 0 auto; /* Center the image horizontally within its container */
+    display: block;
+    margin: 0 auto;
 }
 .slick-dots li {
     list-style: none;
   }
   .slick-dots button {
-    background-color: #dc4114; /* Set the active dot color */
+    background-color: #dc4114;
     content: ""!important;
     color: transparent;
   }
@@ -665,7 +649,7 @@ h1{
 }
 
 .home_slider {
-    height: 300px; /* Adjust the height as needed */
+    height: 300px; 
 }
 
 
