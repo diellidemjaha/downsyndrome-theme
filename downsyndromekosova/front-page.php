@@ -31,8 +31,8 @@
             autoplaySpeed: 2000,
             fade: true,
             cssEase: 'linear',
-            dots: true, // Add dots for navigation
-            arrows: false, // Remove previous and next buttons
+            dots: true, 
+            arrows: false, 
             swipe: true,
             fade: false,
             //  rtl: true,
@@ -58,12 +58,6 @@
         });
     });
 </script>
-<!-- <div class="site-main">
-    <div class="home_slider" dir>
-        <img src="<?php echo get_template_directory_uri(); ?>/image1.jpg">
-        <img src="<?php echo get_template_directory_uri(); ?>/image2.jpg">
-        <img src="<?php echo get_template_directory_uri(); ?>/image3.jpg">
-    </div> -->
 <div class="site-main">
     <div class="home_slider" dir>
         <?php
@@ -155,7 +149,6 @@
     </div>
 
 
-    <!-- New container for social media links and contact information -->
 
     <div class="row py-5 mb-3">
         <div class="col-md-6 col-lg-4 col-12 mb-4  d-flex justify-content-center">
